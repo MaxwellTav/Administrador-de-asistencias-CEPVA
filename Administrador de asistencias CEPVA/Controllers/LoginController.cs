@@ -9,16 +9,5 @@ namespace Administrador_de_asistencias_CEPVA.Controllers
             return View();
         }
 
-        public IActionResult ForgotPassword()
-        {
-            return View();
-        }
-
-        public IActionResult RegistNewUser()
-        {
-            return View();
-        }
-
-
     }
 }
