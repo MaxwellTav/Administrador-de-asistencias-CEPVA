@@ -19,6 +19,8 @@
 
     <title>Dashboard</title>
 </head>
+
+
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">
 
@@ -31,8 +33,51 @@
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="#" class="nav-link">Inicio</a>
                 </li>
+                </ul>
+
+                <!-- Dropdown - User Information -->
+                <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <button class="btn btn-white dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://via.placeholder.com/50" class="rounded-circle" alt="Profile Picture"> John Doe
+                    </button>
+                    <ul class="dropdown-menu p-3 shadow" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item d-flex align-items-center" href="#"><i class="fas fa-cog me-2"></i>Setting</a></li>
+                        <li><a class="dropdown-item d-flex align-items-center" href="#"><i class="fas fa-user me-2"></i>Profile</a></li>
+                        <li><a class="dropdown-item d-flex align-items-center" href="#"><i class="fas fa-envelope me-2"></i>Messages</a></li>
+                        <li><a class="dropdown-item d-flex align-items-center" href="#"><i class="fas fa-power-off me-2"></i>Logout</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
+
+        <style>
+            
+            .navbar .dropdown .btn {
+                padding: 0;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                
+            }
+
+  
+                .navbar .dropdown .btn img {
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 5px;
+                }
+
+            .navbar .btn {
+                transform: translateX(-20px); /* Ajusta el valor según la distancia deseada */
+            }
+
+            .navbar .dropdown-menu {
+                transform: translateX(-60px);
+            }
+        </style>
+
+
         <!-- /.navbar -->
         <!-- Sidebar -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
