@@ -2,11 +2,11 @@
 
 namespace Administrador_de_asistencias_CEPVA.Controllers
 {
-    public class LoginController : Controller
+    public class AttendanceController : Controller
     {
         public IActionResult Index()
         {
-            InitializeViewBags(true, true, true);
+            InitializeViewBags(false, false, false);
             return View();
         }
 

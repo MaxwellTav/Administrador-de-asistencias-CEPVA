@@ -15,18 +15,21 @@ namespace Administrador_de_asistencias_CEPVA.Controllers
 
         public IActionResult Index()
         {
+            InitializeViewBags(false, false, false);
             return View();
         }
 
-        public IActionResult Privacy()
+        /// <summary>
+        /// Automáticamente oculta o muestra un componente de la página.
+        /// </summary>
+        /// <param name="_navbar">Esconderá la barra de navegación superior.</param>
+        /// <param name="_sidebar">Esconderá la barra lateral, la cuál está el menú y demás opciones.</param>
+        /// <param name="_footer">Esconderá el pie de página.</param>
+        void InitializeViewBags(bool _navbar, bool _sidebar, bool _footer)
         {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            ViewBag.HideNavbar = _navbar;
+            ViewBag.HideSidebar = _sidebar;
+            ViewBag.HideFooter = _footer;
         }
     }
 }
