@@ -9,7 +9,7 @@ namespace Administrador_de_asistencias_CEPVA.Controllers
             InitializeViewBags(true, true, true);
             return View();
         }
-
+        
         /// <summary>
         /// Automáticamente oculta o muestra un componente de la página.
         /// </summary>
