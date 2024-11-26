@@ -2,7 +2,7 @@
 
 namespace Administrador_de_asistencias_CEPVA.Controllers
 {
-    public class YearController : Controller
+    public class CreateStudentController : Controller
     {
         public IActionResult Index()
         {
